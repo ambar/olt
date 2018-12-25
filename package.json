@@ -1,0 +1,26 @@
+{
+  "name": "olt",
+  "version": "0.0.0",
+  "description": "A dead simple, one-line template",
+  "repository": "ambar/olt",
+  "license": "MIT",
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "olt",
+    "template",
+    "ejs",
+    "mustache",
+    "lodash.template"
+  ],
+  "scripts": {
+    "prepare": "npm test",
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "test:watch": "jest --watch --notify"
+  },
+  "devDependencies": {
+    "jest": "^23.6.0"
+  }
+}
