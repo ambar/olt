@@ -6,3 +6,6 @@
 # Files
 *.log
 .DS_Store
+
+## Dist
+index.cjs.js

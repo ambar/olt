@@ -1,4 +1,4 @@
-const olt = require('.')
+import olt from '.'
 
 describe('olt', () => {
   it('should render with data', () => {

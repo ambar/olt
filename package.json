@@ -4,7 +4,11 @@
   "description": "A dead simple, one-line template",
   "repository": "ambar/olt",
   "license": "MIT",
+  "module": "index.js",
+  "unpkg": "index.js",
+  "main": "index.cjs.js",
   "files": [
+    "index.cjs.js",
     "index.js"
   ],
   "keywords": [
@@ -15,12 +19,18 @@
     "lodash.template"
   ],
   "scripts": {
-    "prepare": "npm test",
+    "prepare": "npm test && npm run build",
     "test": "jest",
     "test:coverage": "jest --coverage",
-    "test:watch": "jest --watch --notify"
+    "test:watch": "jest --watch --notify",
+    "build": "rollup -f cjs $npm_package_module -o $npm_package_main"
+  },
+  "jest": {
+    "preset": "rollup-jest"
   },
   "devDependencies": {
-    "jest": "^23.6.0"
+    "jest": "^23.6.0",
+    "rollup": "^1.1.2",
+    "rollup-jest": "^0.0.2"
   }
 }
