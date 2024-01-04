@@ -4,12 +4,12 @@
   "description": "A dead simple, one-line template",
   "repository": "ambar/olt",
   "license": "MIT",
-  "module": "index.js",
-  "unpkg": "index.js",
+  "module": "index.mjs",
+  "unpkg": "index.mjs",
   "main": "index.cjs.js",
   "files": [
     "index.cjs.js",
-    "index.js"
+    "index.mjs"
   ],
   "keywords": [
     "olt",
@@ -19,19 +19,14 @@
     "lodash.template"
   ],
   "scripts": {
-    "prepare": "npm test && npm run build",
-    "test": "jest",
-    "test:coverage": "jest --coverage",
-    "test:watch": "jest --watch --notify",
+    "prepublishOnly": "npm test && npm run build",
+    "test": "node --test",
+    "test:coverage": "node --test --experimental-test-coverage --test-reporter=lcov --test-reporter-destination=./coverage/lcov.info",
+    "test:watch": "node --test --watch --notify",
     "build": "rollup -f cjs $npm_package_module -o $npm_package_main"
   },
-  "jest": {
-    "preset": "rollup-jest"
-  },
   "devDependencies": {
-    "jest": "^29.7.0",
-    "rollup": "^2.75.5",
-    "rollup-jest": "^3.0.0"
+    "rollup": "^2.75.5"
   },
   "packageManager": "pnpm@8.13.0+sha256.fbcf256db6d06bc189e31df34b3ed61220f3ba9f78a2ca8fe7be0fce4670dbd3"
 }
