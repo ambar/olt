@@ -30,7 +30,7 @@
   },
   "devDependencies": {
     "jest": "^29.7.0",
-    "rollup": "^2.75.5",
+    "rollup": "^3.29.5",
     "rollup-jest": "^3.0.0"
   },
   "packageManager": "pnpm@8.13.0+sha256.fbcf256db6d06bc189e31df34b3ed61220f3ba9f78a2ca8fe7be0fce4670dbd3"

@@ -9,11 +9,11 @@ devDependencies:
     specifier: ^29.7.0
     version: 29.7.0
   rollup:
-    specifier: ^2.75.5
-    version: 2.79.1
+    specifier: ^3.29.5
+    version: 3.29.5
   rollup-jest:
     specifier: ^3.0.0
-    version: 3.1.0(rollup@2.79.1)
+    version: 3.1.0(rollup@3.29.5)
 
 packages:
 
@@ -1999,19 +1999,19 @@ packages:
       supports-preserve-symlinks-flag: 1.0.0
     dev: true
 
-  /rollup-jest@3.1.0(rollup@2.79.1):
+  /rollup-jest@3.1.0(rollup@3.29.5):
     resolution: {integrity: sha512-6jEupvSFyalbNRv/Gp24ptWlpy7KQnwPnLr2Q1EoH7ZP+R/DpyDVPwKBfkJRnYdeM467O9HZaj8ahUEyY1Tflw==}
     engines: {node: '>=12.0'}
     peerDependencies:
       rollup: ^2.3.0 || ^3
     dependencies:
       concat-merge: 1.0.3
-      rollup: 2.79.1
+      rollup: 3.29.5
     dev: true
 
-  /rollup@2.79.1:
-    resolution: {integrity: sha512-uKxbd0IhMZOhjAiD5oAFp7BqvkA4Dv47qpOCtaNvng4HBwdbWtdOh8f5nZNuk2rp51PMGk3bzfWu5oayNEuYnw==}
-    engines: {node: '>=10.0.0'}
+  /rollup@3.29.5:
+    resolution: {integrity: sha512-GVsDdsbJzzy4S/v3dqWPJ7EfvZJfCHiDqe80IyrF59LYuP+e6U1LJoUqeuqRbwAWoMNoXivMNeNAOf5E22VA1w==}
+    engines: {node: '>=14.18.0', npm: '>=8.0.0'}
     hasBin: true
     optionalDependencies:
       fsevents: 2.3.3
